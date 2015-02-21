@@ -1,0 +1,21 @@
+@import "_bootstrap";
+@import "_font-awesome";
+
+//for getStarted page
+a{
+	margin-right:10%;
+	margin-left:10%;
+	width:500px;
+}
+a:hover{
+	background-color:blue;
+}
+h3{
+	text-align:center;
+}
+.floatleft{
+	float:left;
+}
+.floatright{
+	float:right;
+}
