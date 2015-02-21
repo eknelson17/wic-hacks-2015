@@ -6,8 +6,16 @@
 	margin-right:10%;
 	margin-left:10%;
 	text-align:center;
-}
-.button:hover{
-	background-color:blue;
+
+  &:hover{
+    background-color:blue;
 	color:white;
+  }
+}
+
+// Footer
+footer {
+  margin-top: 40px;
+  border-top: solid 1px $gray-lighter;
+  padding-top: 20px;
 }
