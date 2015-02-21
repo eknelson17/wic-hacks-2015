@@ -2,7 +2,10 @@
 @import "_font-awesome";
 
 //for getStarted page
-a{
+.button{
 	margin-right:10%;
 	margin-left:10%;
+}
+.button:hover{
+	background-color:blue;
 }
