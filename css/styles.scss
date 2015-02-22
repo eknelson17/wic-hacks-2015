@@ -4,13 +4,12 @@
 $brand-primary: #5C378C;
 $brand-secondary: #FBB50C;
 
-h1, h2, h3, p {
+body, h1, h2, h3, p {
   font-family: "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 // header
 .navbar {
-  background-color: $gray-lighter;
 
   .navbar-header {
     height: 80px;
@@ -129,6 +128,12 @@ footer {
       color: $brand-secondary;
     }
   }
+}
+
+.concerns {
+  @include make-sm-column(12);
+  @extend .well;
+  margin: 20px auto 0;
 }
 
 //for about
