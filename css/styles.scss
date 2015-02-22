@@ -75,7 +75,19 @@ footer {
   color: $gray-lighter;
 
   .social-icons {
-    margin-top: 15px;
+    margin-top: 6px;
+
+    .fa-stack {
+      font-size: 24px;
+
+      .fa-circle {
+        color: $gray-lighter;
+      }
+
+      .fa-inverse {
+        color: $gray-dark;
+      }
+    }
   }
 
   a {
