@@ -1,0 +1,161 @@
+@import "_bootstrap";
+@import "_font-awesome";
+
+$brand-primary: #5C378C;
+$brand-secondary: #FBB50C;
+
+body, h1, h2, h3, p {
+  font-family: "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+// header
+.navbar {
+
+  .navbar-header {
+    height: 80px;
+
+    button {
+      margin: 22px 15px;
+    }
+  }
+
+  .navbar-brand {
+    padding: 0 15px;
+
+    img {
+      height: 80px;
+    }
+  }
+
+  ul {
+    li {
+      padding: 15px;
+
+      a {
+        font-size: 18px;
+
+        &.btn {
+          padding-top: 14px;
+              background-color: transparent;
+
+        }
+      }
+    }
+  }
+}
+
+//for getStarted page
+.option{
+  margin-bottom: 30px;
+	text-align: center;
+  border: solid 1px $gray-lighter;
+
+  &:hover{
+    background-color: $brand-primary;
+	  color: white;
+  }
+
+  img {
+    width: 300px;
+    margin: 5px;
+  }
+
+  .option-text {
+    font-size: 18px;
+  }
+}
+
+// Footer
+footer {
+  margin-top: 80px;
+  padding-bottom: 20px;
+  border-top: solid 1px $gray-lighter;
+  padding-top: 20px;
+  background-color: $gray-dark;
+  color: $gray-lighter;
+
+  .social-icons {
+    margin-top: 6px;
+
+    .fa-stack {
+      font-size: 24px;
+
+      .fa-circle {
+        color: $gray-lighter;
+      }
+
+      .fa-inverse {
+        color: $gray-dark;
+      }
+    }
+  }
+
+  a {
+    color: $gray-lighter;
+
+  }
+
+  img {
+    margin-top: 2px;
+    height: 30px;
+  }
+}
+
+// index
+.jumbotron{
+	margin-top:-20px;
+	text-align:center;
+	background-color: $brand-primary;
+  color: $gray-lighter;
+
+  .btn-lg {
+    padding: 10px 24px;
+    font-size: 24px;
+    line-height: 2;
+    background-color: transparent;
+    color: $gray-lighter;
+  }
+
+  h1 {
+    font-size: 100px;
+  }
+
+  p {
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+}
+
+.benefits {
+  h2 {
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+
+    i {
+      display: block;
+      color: $brand-secondary;
+    }
+  }
+}
+
+.concerns {
+  @include make-sm-column(12);
+  @extend .well;
+  margin: 20px auto 0;
+}
+
+//for about
+.p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+//for all uls for the resources
+ul {
+  font-size: 24px;
+}
