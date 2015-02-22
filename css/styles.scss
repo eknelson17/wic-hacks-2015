@@ -7,8 +7,34 @@ $font-family-sans-serif: "Century Gothic", "Helvetica Neue", Helvetica, Arial, s
 $headings-font-family: $font-family-sans-serif;
 
 // header
-.navbar-brand {
-  padding: 2.5px 15px;
+.navbar {
+  height: 80px;
+
+  .navbar-brand {
+    padding: 2.5px 15px;
+
+    img {
+      height: 80px;
+    }
+  }
+
+  ul {
+    li {
+      padding: 15px;
+
+      a {
+        font-size: 18px;
+
+        &.btn {
+          padding-top: 14px;
+        }
+      }
+    }
+
+    li:last-child {
+      padding-right: 0;
+    }
+  }
 }
 
 //for getStarted page
