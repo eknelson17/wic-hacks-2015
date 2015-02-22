@@ -10,7 +10,15 @@ h1, h2, h3, p {
 
 // header
 .navbar {
-  height: 80px;
+  background-color: $gray-lighter;
+
+  .navbar-header {
+    height: 80px;
+
+    button {
+      margin: 22px 15px;
+    }
+  }
 
   .navbar-brand {
     padding: 0 15px;
@@ -33,10 +41,6 @@ h1, h2, h3, p {
 
         }
       }
-    }
-
-    li:last-child {
-      padding-right: 0;
     }
   }
 }
