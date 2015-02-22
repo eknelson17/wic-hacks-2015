@@ -6961,7 +6961,7 @@ button.close {
 body, h1, h2, h3, p {
   font-family: "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   iframe {
     display: none; } }
 .navbar .navbar-header {

@@ -11,13 +11,19 @@ $brand-secondary: #FBB50C;
   }
 }
 
+@mixin screen-sm {
+  @media screen and (max-width: $screen-sm-max) {
+    @content;
+  }
+}
+
 body, h1, h2, h3, p {
   font-family: "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-@include mobile {
+@include screen-sm {
   iframe {
-    display: none;
+    display: none;    
   }
 }
 
