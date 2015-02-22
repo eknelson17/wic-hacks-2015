@@ -1,0 +1,10 @@
+---
+layout: page
+title: What language are you looking for?
+options: [French, Spanish, German, Latin]
+folder: 
+---
+
+{% for option in page.options %}
+	{% include option.html %}
+{% endfor %}
