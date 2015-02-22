@@ -2,16 +2,18 @@
 @import "_font-awesome";
 
 $brand-primary: #5C378C;
+$brand-secondary: #FBB50C;
 
-$font-family-sans-serif: "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$headings-font-family: $font-family-sans-serif;
+h1, h2, h3, p {
+  font-family: "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 // header
 .navbar {
   height: 80px;
 
   .navbar-brand {
-    padding: 2.5px 15px;
+    padding: 0 15px;
 
     img {
       height: 80px;
@@ -27,6 +29,8 @@ $headings-font-family: $font-family-sans-serif;
 
         &.btn {
           padding-top: 14px;
+              background-color: transparent;
+
         }
       }
     }
@@ -60,10 +64,26 @@ $headings-font-family: $font-family-sans-serif;
 
 // Footer
 footer {
-  margin-top: 40px;
+  margin-top: 80px;
   padding-bottom: 20px;
   border-top: solid 1px $gray-lighter;
   padding-top: 20px;
+  background-color: $gray-dark;
+  color: $gray-lighter;
+
+  .social-icons {
+    margin-top: 15px;
+  }
+
+  a {
+    color: $gray-lighter;
+
+  }
+
+  img {
+    margin-top: 2px;
+    height: 30px;
+  }
 }
 
 // index
@@ -73,13 +93,36 @@ footer {
 	background-color: $brand-primary;
   color: $gray-lighter;
 
+  .btn-lg {
+    padding: 10px 24px;
+    font-size: 24px;
+    line-height: 2;
+    background-color: transparent;
+    color: $gray-lighter;
+  }
+
   h1 {
     font-size: 100px;
   }
 
   p {
-    font-size: 40px;
-    font-weight: 100;
+    font-size: 32px;
+    letter-spacing: 2px;
     margin-bottom: 20px;
+  }
+}
+
+.benefits {
+  padding-top: 30px;
+
+  h2 {
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+
+    i {
+      display: block;
+      color: $brand-secondary;
+    }
   }
 }
