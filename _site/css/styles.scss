@@ -4,6 +4,13 @@
 $brand-primary: #5C378C;
 $brand-secondary: #FBB50C;
 
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: $screen-xs-max) {
+    @content;
+  }
+}
+
 body, h1, h2, h3, p {
   font-family: "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -118,6 +125,10 @@ footer {
 
   h1 {
     font-size: 100px;
+
+    @include mobile {
+      font-size: 4.5em;
+    }
   }
 
   p {

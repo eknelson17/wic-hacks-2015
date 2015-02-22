@@ -7024,6 +7024,9 @@ footer {
     color: #eeeeee; }
   .jumbotron h1 {
     font-size: 100px; }
+    @media screen and (max-width: 767px) {
+      .jumbotron h1 {
+        font-size: 4.5em; } }
   .jumbotron p {
     font-size: 32px;
     letter-spacing: 2px;
