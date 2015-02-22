@@ -1,6 +1,16 @@
 @import "_bootstrap";
 @import "_font-awesome";
 
+$brand-primary: #5C378C;
+
+$font-family-sans-serif: "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$headings-font-family: $font-family-sans-serif;
+
+// header
+.navbar-brand {
+  padding: 2.5px 15px;
+}
+
 //for getStarted page
 .option{
   margin-bottom: 30px;
@@ -34,5 +44,16 @@ footer {
 .jumbotron{
 	margin-top:-20px;
 	text-align:center;
-	      
+	background-color: $brand-primary;
+  color: $gray-lighter;
+
+  h1 {
+    font-size: 100px;
+  }
+
+  p {
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 20px;
+  }
 }
